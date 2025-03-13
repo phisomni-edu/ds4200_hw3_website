@@ -13,6 +13,10 @@ header {
     text-align: center;
 }
 
+header h1 {
+    color: white;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;

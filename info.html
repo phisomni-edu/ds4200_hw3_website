@@ -19,16 +19,22 @@
         <section>
             <h2>Details</h2>
             <p>
-                This section provides more details about the topic discussed on the home page. 
-                You should write at least 200 words explaining an aspect of your life, work, 
-                interests, or any other topic you are passionate about.
+                Here is the process we undertook to complete our analysis.
             </p>
-            <img src="your-second-image.jpg" alt="A related image">
             <h3>Key Highlights</h3>
             <ul>
-                <li>First point about your topic</li>
-                <li>Second interesting fact</li>
-                <li>Third key highlight</li>
+                <li>We first sourced the data from Mendeley, and had to combine two different data files together over compatible columns. We then
+                selected for columns thatw were the most relevent, and performed other data cleanup sets.</li>
+                <li>We then tested a large variety of classifier models on a small portion of the data, and plotted their respective accuracy, 
+                precision, and recall. We decided to move on with KNN and Random Forests for their performance.</li>
+                <li>We then tested various parameters for the models, performing KFlold Cross Validation ech time to find the best K and branch
+                depth for the respective models, settling on 9 and 7 respectively.</li>
+                <li>We trained the models with optimized parameters on the whole data with KFold Cross Validation, and created confusion heatmaps
+                based on the classification results.</li>
+                <li>We used the point biserial tests to get the correlstion between individual variables and phishing status, finding the number of
+                forward slashes and the URL length to be the strongest correlated.</li>
+                <li>We performed some exploratory data analysis to try and identify and other trends within the data, focusing on the features
+                we saw strongly and moderately correlated to phishing.</li>
             </ul>
         </section>
     </main>
